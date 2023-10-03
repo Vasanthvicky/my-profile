@@ -1,0 +1,69 @@
+@import '../../../src/variables.scss';
+
+.about-section {
+    display: flex;
+}
+
+.about-details {
+    display: block;
+}
+
+.about-profile {
+    .about-profile-pic {
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2F0Y9A8121.JPG?alt=media&token=76c07139-91fb-4f89-9d45-11c5a2e0aca5");     
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        padding: 150px;
+        border-radius: 50%;
+        position: relative;
+        top: 20%;
+    }
+    .my-profile {
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+.title {
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.skills-block {
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .skill-list {
+            width: 100px;
+            height: 100px;
+            margin: 40px 20px;
+            img {
+               
+            }
+        }
+    }
+}
+
+.my-8 {
+    padding-top: 1rem;
+}
+
+.description {
+    li {
+        padding: 10px 0;
+    }
+}
+
+.smooth-scroll {
+    float: right;
+    position: fixed;
+    right: 15px;
+    background: $background-menu;
+    color: $text-color-white;
+    padding: 10px 16px;
+    border-radius: 50%;
+    bottom: 15px;
+}

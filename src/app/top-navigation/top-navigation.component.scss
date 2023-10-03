@@ -1,0 +1,40 @@
+@import '../../../src/variables.scss';
+
+.navbar {
+    background-color: $background-menu;
+    height: 65px;
+    padding: 5px 20px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.navbar-brand {
+    display: inline-block;
+}
+.about-list {
+    display: flex;
+    li {
+        padding: 5px 15px;
+    }
+}
+
+.router.active {
+    position: relative;
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 70%;
+        border-bottom: 3px solid #fff;
+        transition: all 350ms;
+        border-radius: 20px;
+    }
+}
