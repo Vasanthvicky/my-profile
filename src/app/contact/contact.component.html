@@ -1,0 +1,349 @@
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+  <div class="my-resume">
+    <div class="row my-profile-section">
+      <div class="left-details-info">
+        <div class="profile-pic">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2Fprofile-pic.png?alt=media&token=43e3ceb5-1cd2-4517-9a95-54b5930d51a4"
+            alt=""
+          />
+        </div>
+        <div class="profile-details">
+          <ul class="list-block">
+            <li>
+              <fa-icon class="side-nav-link-icon" [icon]="myMailIcon"></fa-icon>
+              <a href="mail">c.vigneshvasanth@gmail.com</a>
+            </li>
+            <li>
+              <fa-icon
+                class="side-nav-link-icon"
+                [icon]="myPhoneIcon"
+              ></fa-icon>
+              <p>+91 8110818281</p>
+            </li>
+            <li>
+              <fa-icon
+                class="side-nav-link-icon"
+                [icon]="myLinkedInIcon"
+              ></fa-icon>
+              <a
+                href="https://www.linkedin.com/in/vigneshvasanth-c/"
+                target="”_blank”"
+                >Vigneshvasanth C</a
+              >
+            </li>
+            <li>
+              <fa-icon class="side-nav-link-icon" [icon]="myFlag"></fa-icon>
+              <p>Coimbatore, Indian</p>
+            </li>
+            <li>
+              <fa-icon
+                class="side-nav-link-icon"
+                [icon]="myPortfolio"
+              ></fa-icon>
+              <a>c.vigneshvasanth.com</a>
+            </li>
+          </ul>
+
+          <ul class="list-education">
+            <h3 class="title">Education</h3>
+            <li>
+              <h6>BE(Mechanical Engineer)</h6>
+              <p>Bannari Amman Institue of Technology</p>
+              <p>Jun 2014 - Apr 2017</p>
+            </li>
+            <li>
+              <h6>DME(Dipolma in Mechanical Engineer)</h6>
+              <p>Annai JKK sampoorani ammal polytechnic College</p>
+              <p>Jun 2012 - Apr 2014</p>
+            </li>
+            <li>
+              <h6>Computer Science (Computer Science)</h6>
+              <p>Sri Ragavendra Higher Secondary School</p>
+              <p>Jun 2010 - Apr 2012</p>
+            </li>
+          </ul>
+
+          <!-- <ul class="list-skills">
+            <h3 class="title">Skills</h3>
+            <li>
+              <p>Teamwork</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </li>
+            <li>
+              <p>Creativity</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </li>
+            <li>
+              <p>Time Management</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </li>
+            <li>
+              <p>Communication</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </li>
+            <li>
+              <p>Problem Solving</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </li>
+          </ul> -->
+
+          <ul class="list-skills">
+            <h3 class="title">Technical Skills</h3>
+            <li>HTML/CSS</li>
+            <li>Tailwind CSS, SCSS, Less, Sass</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Bootstrap</li>
+            <li>Angular 12 +</li>
+            <li>Responsive Web Design: Advanced</li>
+            <li>User Experience (UX) Design: Proficient</li>
+            <li>Version Control (Git): Proficient</li>
+            <li>Bitbucket</li>
+            <li>Visual Studio Code</li>
+            <li>Atlasain</li>
+            <li>Jira Service Desk</li>
+            <li>Figma</li>
+          </ul>
+
+          <ul class="list-links">
+            <h3 class="title">Links</h3>
+            <li>
+              <a href="https://www.linkedin.com/in/vigneshvasanth-c/">
+                <fa-icon [icon]="myGitHub"></fa-icon>
+                Linked IN
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Vasanthvicky">
+                <fa-icon [icon]="myLinkedInIcon"></fa-icon>
+                GitHub
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <h3 class="title">Certificate</h3>
+            <li>
+              <a href="https://www.coursera.org/account/accomplishments/verify/KWTVZ3QYF7MD">Front-End JavaScript Frameworks: Angular</a>
+            </li>
+            <li>
+              <a href="https://www.coursera.org/account/accomplishments/verify/9E638Z4AR4PJ">Server-side Development with NodeJS, Express and MongoDB</a>
+            </li>
+          </ul>
+
+          <ul class="list-languages">
+            <h3 class="title">Language</h3>
+            <li>
+              <p>English</p>
+            </li>
+            <li>
+              <p>Tamil</p>
+            </li>
+            <li>
+              <p>Kannada(speak only)</p>
+            </li>
+          </ul>
+
+          <ul class="list-hobbies">
+            <h3 class="title">Interests</h3>
+            <li>
+              <p>Playing Cricket</p>
+            </li>
+            <li>
+              <p>Badminton</p>
+            </li>
+            <li>
+              <p>Chess</p>
+            </li>
+            <li>
+              <p>Reading Books</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-details-info">
+        <div class="name-block">
+          <h2 class="title name">Vignesh Vasanth C</h2>
+          <h5 class="sub-title">UI Engineer</h5>
+        </div>
+        <!-- Name Block -->
+        <div class="summary-block">
+          <h3 class="title">Summary</h3>
+          <p class="summary">
+            Highly proficient Front End Web Developer with 5+ years of
+            experience in HTML/CSS, JavaScript, and Angular. Skilled in
+            translating designs into functional interfaces. Detail-oriented and
+            collaborative, dedicated to delivering exceptional user experiences.
+          </p>
+        </div>
+        <!-- Summary Block -->
+
+        <div class="experience-block">
+          <h3 class="title">UI Engineer at TrusTrace <small>Sep 2019 - Present</small></h3>
+          
+          <ul class="experience-list">
+            <li>
+              Developed front-end user interfaces for several complex web
+              applications with HTML, CSS, and JavaScript.
+            </li>
+            <li>
+              Utilized Angular frameworks to create interactive, responsive, and
+              user-friendly web designs.
+            </li>
+            <li>
+              Collaborated with web designers and back-end developers to ensure
+              web applications met customer requirements.
+            </li>
+            <li>
+              Optimized websites for maximum speed and scalability, while also
+              ensuring compatibility with various browsers and devices.
+            </li>
+            <li>
+              Implemented user authentication, API integration, and third-party
+              payment systems.
+            </li>
+            <li>
+              Created custom UI components and implemented layouts using HTML5,
+              CSS3, and JavaScript.
+            </li>
+            <li>
+              Developed and maintained reusable code libraries, while keeping
+              track of changes and their effects on existing functionality.
+            </li>
+            <li>
+              Investigated and resolved technical issues related to front-end
+              development.
+            </li>
+            <li>
+              Participated in code reviews, feature planning, and design
+              reviews.
+            </li>
+            <li>
+              Angular Framework: Extensive experience in developing applications
+              using Angular, including Angular JS, Angular 2+, and Angular 12.
+              Proficient in working with Angular components, modules, services,
+              routing, forms, and reactive programming using RxJS.
+            </li>
+            <li>
+              Strong proficiency in Typescript, the primary language used in
+              Angular development. Expertise in leveraging Typescript features
+              like static typing, interfaces, classes, and decorators to write
+              clean, maintainable, and scalable code.
+            </li>
+            <li>
+              Solid understanding of core JavaScript concepts and ES6+ features.
+              Skilled in leveraging JavaScript libraries and frameworks to
+              enhance Angular applications when necessary.
+            </li>
+            <li>
+              Experience in consuming RESTful APIs and integrating them into
+              Angular applications. Familiarity with concepts like asynchronous
+              programming, HTTP methods, error handling, and
+              authentication/authorization mechanisms.
+            </li>
+            <li>
+              Proficient in translating design mockups and wireframes into
+              pixel-perfect, intuitive user interfaces. Knowledgeable about
+              UI/UX principles and able to collaborate effectively with
+              designers to achieve optimal user experiences.
+            </li>
+            <li>
+              Strong experience with Git for version control, branching, and
+              merging code. Comfortable working in collaborative environments
+              using platforms like GitHub or Bitbucket.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-block">
+          <h3 class="title">UI Developer UITOUX Solution Private Limited <small>Sep 2017 - Sep 2019</small></h3>
+          
+          <ul class="experience-list">
+            <li>
+              Collaborated with a multidisciplinary team to design and implement
+              an interactive web application using HTML, CSS, JavaScript, and
+              JavaScript.
+            </li>
+            <li>
+              Successfully created a user-friendly interface for a SaaS
+              application, which increased customer satisfaction by 25%.
+            </li>
+            <li>
+              Developed mobile-responsive UI using Bootstrap and Angular JS.
+            </li>
+            <li>
+              Utilized Angular JS to develop custom web applications with
+              dynamic user interface components.
+            </li>
+            <li>
+              Implemented a user-friendly interface for a web-based application
+              using HTML5, CSS3, and JavaScript.
+            </li>
+            <li>
+              Developed a design system for an enterprise application, which
+              resulted in a more efficient user experience.
+            </li>
+            <li>
+              HTML, CSS, Tailwind CSS, Sass, and Less, I have a powerful toolkit
+              for building beautiful, responsive, and efficient web designs.
+              These technologies can significantly my development process and
+              enhance my ability to create visually appealing websites.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>
+  Hello, I'm an experienced Angular Front End Developer with over 5 years of
+  professional experience. I have a strong background in developing robust and
+  scalable web applications using Angular frameworks. With my expertise in HTML,
+  CSS, and JavaScript, I specialize in creating interactive and user-friendly
+  interfaces. I am well-versed in Angular versions including AngularJS, Angular
+  2+, and Angular 12, and have a deep understanding of core Angular concepts
+  such as components, modules, services, and routing. Throughout my career, I
+  have successfully delivered projects that have met client requirements and
+  exceeded expectations. I am committed to continuously learning and staying
+  updated with the latest trends and best practices in front-end development to
+  ensure the delivery of cutting-edge solutions.
+</p>

@@ -12,6 +12,7 @@ import { ProjectsRoutingModule } from './projects/projects-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { RoadsideAssistanceComponent } from './projects/roadside-assistance/roadside-assistance.component';
 import { VehicleBookingManagementSystemComponent } from './projects/vehicle-booking-management-system/vehicle-booking-management-system.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about-me', pathMatch: 'full' },
@@ -45,7 +46,7 @@ const routes: Routes = [
         (mod) => mod.ProjectsRoutingModule
       ), // Load the child component's routing module
   },
-  // { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 // @NgModule({

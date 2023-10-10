@@ -9,6 +9,7 @@ import { navbarData } from './nav-data';
 import * as fabIcon from '@fortawesome/free-brands-svg-icons';
 import * as fabIcons from '@fortawesome/free-solid-svg-icons';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import * as faIcons from '@fortawesome/free-solid-svg-icons';
 
 interface SideNavToggle {
   screenWidth: number;
@@ -51,7 +52,7 @@ export class SideNavComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
-  printIcon(daa: string | number) {
+  printIcon(daa: any) {
     // console.log(fabIcons[daa]);
     // return fabIcons[daa];
   }

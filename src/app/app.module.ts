@@ -19,6 +19,7 @@ import { RouterComponent } from './router/router.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module
     ProjectListViewComponent,
     RoadsideAssistanceComponent,
     VehicleBookingManagementSystemComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
