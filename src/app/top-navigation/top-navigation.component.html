@@ -1,0 +1,25 @@
+<!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <div class="section-block">
+      <div class="navbar-brand">
+        <a href="">
+          <!-- <img
+            src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.webp"
+            height="20"
+            alt=""
+            loading="lazy"
+          /> -->
+        </a>
+      </div>
+  
+      <div class="section-right float-right">
+        <ul class="about-list">
+          <li class="list-item" *ngFor="let topData of topNavDataList">
+            <a class="router" [routerLink]="[topData.routeLink]" routerLinkActive="active">{{topData.label}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,27 @@
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+  <div class="header-section">
+    <div class="title-block">
+        <h2 class="title">Easy Pay</h2>
+    </div>
+    <div class="back-btn float-right">
+      <button type="button" class="btn btn-secondary" (click)="backUrl()">
+          Back
+      </button>
+    </div>
+  </div>
+    <div class="project-details">
+      <ul class="project-block">
+        <li *ngFor="let fmsData of fmsDetails">
+          <h2 class="sub-title">{{ fmsData.overview }}</h2>
+          <div class="project-description">
+            <p class="description">{{ fmsData.description }}</p>
+          </div>
+          <div class="project-img">
+            <img [src]="fmsData.src" alt="" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>

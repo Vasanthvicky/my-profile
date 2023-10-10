@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* @import "tailwind base";
+@import "tailwind components";
+@import "tailwind utilities"; */
+
+@import './variables';
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text-color: red;
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-size: 5rem;
+    --primary-color: #272727;
+    --secondary-color: #000;
+    --menu-background: #01011D;
+
+    --content-light: #9999A5;
+    --content-light-dark: #ffffff;
+    --light-white: #dfdfdf;
+    --scrollbar-color-gray: #c3c3c3;
+    --scrollbar-backround: #707070;
+
+    //color: #84A98C;
+    //color: #272727;
+    //color: #CAD2C5;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    scroll-behavior: smooth;
+}
+
+.container-block {
+    padding-top: 2rem;
+}
+
+// Scrollbar CSS
+::-webkit-scrollbar {
+    background: $color-light-white;
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $text-color-white;
+    border: solid $scrollbar-color-gray 7px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $text-color-white;
+}
+
+.project-block {
+    display: block;
+    grid-template-columns: auto auto;
+    align-items: center;
+    li {
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .description {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+        padding: 10px 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.back-btn {
+    .btn-secondary {
+        color: $text-color-black;
+        border: 1px solid $text-color-black;
+        border-radius: 6px;
+        padding: 5px 20px;
+        background-color: $text-color-white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 350ms;
+        &:hover {
+            background-color: $text-color-black;
+            color: $text-color-white;
+            transition: all 350ms;
+        }
+    }
+}

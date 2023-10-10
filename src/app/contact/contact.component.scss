@@ -1,0 +1,164 @@
+.my-resume {
+    padding: 40px 10px;
+}
+
+.my-profile-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .left-details-info {
+        width: 30%;
+        background: darkseagreen;
+        padding: 20px;
+    }
+    .right-details-info {
+        width: 70%;
+        background: ghostwhite;
+    }
+}
+.profile-pic {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+.profile-details {
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px 0 5px;
+    }
+    .list-block {        
+        display: inline-block;
+        line-height: 1.2;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 10px 5px 0;
+            align-items: center;
+            vertical-align: middle;
+            fa-icon {
+                font-size: 20px;
+            }
+            a, p {
+                font-size: 16px;
+                padding-left: 20px;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.list-education {
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 20px 0 5px;
+    }
+    li {
+        list-style-type: initial;
+        padding: 5px 0; 
+        margin-left: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 23px;
+            left: -15px;
+            border: 1px solid gray;
+            width: 2px;
+            height: 73%;
+        }
+        h6 {
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.list-skills, .list-links, .list-languages, .list-hobbies  {
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 20px 0 5px;
+    }
+}
+p {
+    margin-bottom: 0;
+}
+
+.list-skills {
+    .progress-bar {
+        margin: 10px 0;
+    }
+    li {
+        list-style-type: initial;
+        padding: 5px 0;
+        margin-left: 20px;
+    }
+}
+.bg-blue-600 {
+    background-color: #272727;
+}
+
+.name-block {
+    display: inline-block;
+    background: orange;
+    padding: 10px 60px 10px 30px;
+    margin-bottom: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 60px;
+    .title {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .sub-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.summary-block {
+    padding: 0 20px 0 30px;
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px 0 0;
+        border-bottom: 1px solid #000;
+    }
+    .summary {
+        padding: 15px 0;
+        color: darkslategray;
+    }
+}
+.experience-block {
+    padding: 0 20px 0 30px;
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px 0 0;
+        border-bottom: 1px solid #000;
+        small {
+            display: block;
+        }
+    }
+    .experience-list {
+        padding: 15px 0;
+        color: darkslategray;
+        padding-left: 20px;
+        li {
+            list-style-type: initial;
+            padding: 5px 0; 
+        }
+    }
+}
