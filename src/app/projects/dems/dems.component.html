@@ -1,0 +1,27 @@
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+    <div class="header-section">
+        <div class="title-block">
+            <h2 class="title">Digital Expenses Management System</h2>
+        </div>
+        <div class="back-btn float-right">
+        <button type="button" class="btn btn-secondary" (click)="backUrl()">
+            Back
+        </button>
+        </div>
+    </div>
+    <div class="project-details">
+        <ul class="project-block">
+        <li *ngFor="let demsData of demsDetails">
+            <h2 class="sub-title">{{ demsData.overview }}</h2>
+            <div class="project-description">
+                <p class="description">{{ demsData.description }}</p>
+            </div>
+            <div class="project-img">
+                <img [src]="demsData.src" alt="" />
+            </div>
+        </li>
+        </ul>
+    </div>
+</div>

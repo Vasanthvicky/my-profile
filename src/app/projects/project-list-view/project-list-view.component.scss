@@ -1,0 +1,68 @@
+@import '../../../../src/variables.scss';
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.container-block {
+    p {
+        padding: 15px 0;
+    }
+}
+.project-list-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+       
+        .project-card-view-details {
+            position: relative;
+            display: grid;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $background-menu;
+            color: $text-color-white;
+           /*  transition: opacity .5s .1s ease-in;
+            opacity: 1; */
+            .project-title {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            &:hover {
+                opacity: 0.9;
+                transition: opacity .3s ease-in;
+                .learn-hover-only {
+                    opacity: 1;
+                    transition: opacity 0.5s 0.1s ease-in;
+                }
+            }
+            .learn-hover-only {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                opacity: 0;
+                max-width: 80%;
+                transition: opacity 0.3s ease-out;
+                border: 1px solid $text-color-white;
+                border-radius: 5px;
+                padding: 10px 15px;
+                font-weight: 600;
+                &:hover {
+                    background-color: $text-color-white;
+                    color: $text-color-black;                    
+                    transition: all 350ms;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

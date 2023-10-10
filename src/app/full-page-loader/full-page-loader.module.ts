@@ -1,10 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FullPageLoaderComponent } from './full-page-loader.component';
 
+
+
 @NgModule({
-    imports: [CommonModule],
-    exports: [FullPageLoaderComponent],
-    declarations: [FullPageLoaderComponent]
+  declarations: [FullPageLoaderComponent],
+  imports: [CommonModule],
+  exports: [FullPageLoaderComponent]
 })
-export class FullPageLoaderModule {}
+export class FullPageLoaderModule { }

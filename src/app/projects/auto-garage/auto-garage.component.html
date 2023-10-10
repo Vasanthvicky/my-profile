@@ -1,0 +1,30 @@
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+  <div class="header-section">
+    <div class="title-block">
+      <h2 class="title">AUTO Garage</h2>
+    </div>
+    <div class="back-btn float-right">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="backUrl()"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+  <div class="project-details">    
+    <ul class="project-block">
+      <li *ngFor="let autoGarageData of projectDetails">   
+        <!-- <h2 class="title">{{ autoGarageData.title }}</h2>      -->
+        <div class="project-img">
+          <img [src]="autoGarageData.src" alt="" />
+        </div>  
+        <p class="description mt-5">{{ autoGarageData.description }}</p>   
+        <p class="description">{{autoGarageData.challengesFaced }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
