@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prodBuild" :"ng build --output-path docs --base-href /my-profile/"
+
   },
   "private": true,
   "dependencies": {
