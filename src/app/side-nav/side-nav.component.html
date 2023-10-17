@@ -14,7 +14,7 @@
         <li class="side-nav-items" *ngFor="let data of navData">
             <a href="" class="side-nav-link" [routerLink]="[data.routeLink]" routerLinkActive="active"
             >
-            <!-- <fa-icon class="side-nav-link-icon" [icon]="printIcon(data.icon)"></fa-icon> -->
+            <fa-icon class="side-nav-link-icon" [icon]="printIcon(data.icon)"></fa-icon>
                 
                 <span class="side-nav-link-text" *ngIf="collapsed">{{data.label}}</span>
             </a> 

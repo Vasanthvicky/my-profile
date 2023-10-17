@@ -6,20 +6,20 @@ import {
   HostListener,
 } from '@angular/core';
 import { navbarData } from './nav-data';
-import * as fabIcon from '@fortawesome/free-brands-svg-icons';
-import * as fabIcons from '@fortawesome/free-solid-svg-icons';
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
-import * as faIcons from '@fortawesome/free-solid-svg-icons';
+import * as fabIcons  from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 interface SideNavToggle {
   screenWidth: number;
   collapsed: boolean;
 }
+type FabIconKey = keyof typeof fabIcons;
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.scss'],
 })
+
 export class SideNavComponent implements OnInit {
   @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
 
@@ -41,9 +41,6 @@ export class SideNavComponent implements OnInit {
     }
   }
 
-  // myLinkedInIcon = faLinkedin;
-  // myGithubIcon = faGithub;
-  // faDownload = faDownload;
   closedIcon = faWindowClose;
 
   constructor() {}
@@ -52,9 +49,13 @@ export class SideNavComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
-  printIcon(daa: any) {
-    // console.log(fabIcons[daa]);
-    // return fabIcons[daa];
+  printIcon(daa: FabIconKey): IconDefinition {
+    const icon: IconDefinition | fabIcons.IconPrefix | fabIcons.IconPack = fabIcons[daa];
+    if (typeof icon !== 'string') {
+      return icon as IconDefinition;
+    } else {
+      throw new Error(`Icon with key ${daa} not found.`);
+    }
   }
 
   toggleCollapse(): void {
