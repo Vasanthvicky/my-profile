@@ -1,4 +1,4 @@
-export const navbarData = [
+export const navbarData: any[] = [
     {
         routeLink: 'about-me',
         icon: 'faUser',
@@ -13,20 +13,5 @@ export const navbarData = [
         routeLink: 'contact',
         icon: 'faContactCard',
         label: 'Contact'
-    },
-    // {
-    //     routeLink: 'pokemon-list',
-    //     icon: 'faVrCardboard',
-    //     label: 'Pokemon List'
-    // },
-    // {
-    //     routeLink: 'profile-info',
-    //     icon: 'faArrowAltCircleRight',
-    //     label: 'Profile Info'
-    // },
-    // {
-    //     routeLink: 'data-list',
-    //     icon: 'faDatabase',
-    //     label: 'Data List'
-    // }
+    }
 ]
