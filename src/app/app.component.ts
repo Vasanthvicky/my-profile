@@ -15,6 +15,7 @@ export class AppComponent {
   constructor(
     private router: Router,
   ) {
+  router.navigateByUrl('/about-me')
   }
   isSideNavCollapsed = false;
   screenWidth = 0;
