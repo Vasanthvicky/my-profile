@@ -15,11 +15,8 @@ import { VehicleBookingManagementSystemComponent } from './projects/vehicle-book
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'about-me', pathMatch: 'full' },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'project-list', component: ProjectListViewComponent },
-  // {path: 'pokemon-view', component: PokemonViewComponent},
-  // {path: '', pathMatch: 'full', redirectTo: 'List'},
   {
     path: 'projects',
     component: ProjectsComponent,
@@ -49,11 +46,6 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
 ];
 
-// @NgModule({
-//   imports: [],
-//   exports: [RouterModule],
-//   providers: [],
-// })
 @NgModule({
   imports: [RouterModule.forRoot(routes), ProjectsRoutingModule],
   exports: [RouterModule],
