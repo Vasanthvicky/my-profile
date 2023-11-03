@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faFirefoxBrowser, faGithub, faLinkedin, faMailchimp, faPhoenixSquadron } from '@fortawesome/free-brands-svg-icons';
-import * as fabIcons  from "@fortawesome/free-solid-svg-icons";
-import { faBirthdayCake, faCalendarDays, faFlag, faHeadphonesSimple, faMailBulk, faMailReply, faVoicemail, faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { faFirefoxBrowser, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFlag, faHeadphonesSimple, faMailBulk, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -19,15 +18,12 @@ export class ContactComponent implements OnInit {
 
   pageLoading = true;
 
-  printIcon(daa: any){
-    // console.log(fabIcons[daa]);
-    // return fabIcons[daa]
-    
-  }
+  phoneNumber = '+91 8110818281';
+
 
   ngOnInit(): void {
     setTimeout(() => {
       this.pageLoading = false;
-    }, 3000);
+    }, 1000);
   }
 }

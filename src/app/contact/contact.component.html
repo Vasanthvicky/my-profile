@@ -14,14 +14,17 @@
           <ul class="list-block">
             <li>
               <fa-icon class="side-nav-link-icon" [icon]="myMailIcon"></fa-icon>
-              <a href="mail">c.vigneshvasanth@gmail.com</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=someone@example.com" target="_blank">c.vigneshvasanth@gmail.com</a>
             </li>
             <li>
               <fa-icon
                 class="side-nav-link-icon"
                 [icon]="myPhoneIcon"
               ></fa-icon>
-              <p>+91 8110818281</p>
+              <p>
+                <a class="phone-number" [href]="'tel:' + phoneNumber">+91 8110818281</a>
+              </p>
+              
             </li>
             <li>
               <fa-icon
@@ -43,7 +46,7 @@
                 class="side-nav-link-icon"
                 [icon]="myPortfolio"
               ></fa-icon>
-              <a>c.vigneshvasanth.com</a>
+              <a href="https://vigneshvasanthc.github.io/my-profile/"  target="”_blank”">c.vigneshvasanth.com</a>
             </li>
           </ul>
 
@@ -146,13 +149,13 @@
           <ul class="list-links">
             <h3 class="title">Links</h3>
             <li>
-              <a href="https://www.linkedin.com/in/vigneshvasanth-c/">
+              <a href="https://www.linkedin.com/in/vigneshvasanth-c/" target="”_blank”">
                 <fa-icon [icon]="myGitHub"></fa-icon>
                 Linked IN
               </a>
             </li>
             <li>
-              <a href="https://github.com/Vasanthvicky">
+              <a href="https://github.com/vigneshvasanthc" target="”_blank”">
                 <fa-icon [icon]="myLinkedInIcon"></fa-icon>
                 GitHub
               </a>
