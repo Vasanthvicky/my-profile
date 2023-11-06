@@ -1,69 +1,100 @@
-@import '../../../src/variables.scss';
+@import "../../../src/variables.scss";
 
 .about-section {
-    display: flex;
+  display: flex;
 }
 
 .about-details {
-    display: block;
+  display: block;
 }
 
 .about-profile {
-    .about-profile-pic {
-        background-image: url("https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2F0Y9A8121.JPG?alt=media&token=76c07139-91fb-4f89-9d45-11c5a2e0aca5");     
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: block;
-        width: 100%;
-        padding: 150px;
-        border-radius: 50%;
-        position: relative;
-        top: 20%;
-    }
-    .my-profile {
-        border-radius: 50%;
-        margin: 0 auto;
-    }
+  .about-profile-pic {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2F0Y9A8121.JPG?alt=media&token=76c07139-91fb-4f89-9d45-11c5a2e0aca5");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    padding: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+  }
+  .my-profile {
+    border-radius: 50%;
+    margin: 0 auto;
+  }
 }
 .title {
-    font-size: 24px;
-    font-weight: 900;
-    text-decoration: underline;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 .skills-block {
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .skill-list {
-            width: 100px;
-            height: 100px;
-            margin: 40px 20px;
-            img {
-               
-            }
-        }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .skill-list {
+      width: 100px;
+      height: 100px;
+      margin: 40px 20px;
+      img {
+      }
     }
+  }
 }
 
 .my-8 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .description {
-    li {
-        padding: 10px 0;
-    }
+  li {
+    padding: 10px 0;
+  }
 }
 
 .smooth-scroll {
-    float: right;
-    position: fixed;
-    right: 15px;
-    background: $background-menu;
-    color: $text-color-white;
-    padding: 10px 16px;
-    border-radius: 50%;
-    bottom: 15px;
+  float: right;
+  position: fixed;
+  right: 15px;
+  background: $background-menu;
+  color: $text-color-white;
+  padding: 10px 16px;
+  border-radius: 50%;
+  bottom: 15px;
+}
+
+.p-carousel-container {
+    padding-bottom: 3em;
+}
+.carousel-demo {
+  margin-top: 100px;
+}
+
+.product-item {
+  .product-item-content {
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    margin: 0.3rem;
+    text-align: center;
+    padding: 2rem 0;
+    height: 10em;
+    align-items: center;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    width: 90%;
+  }
+}
+
+.item.card {
+  text-align: center;
+  display: block;
+  img {
+    width: 70px;
+    margin: 0 auto;
+  }
 }

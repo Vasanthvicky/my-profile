@@ -20,6 +20,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselModule } from 'primeng/carousel'; 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     FontAwesomeModule,
     ProjectsRoutingModule,
-    FullPageLoaderModule
+    FullPageLoaderModule,
+    CarouselModule,
+    HttpClientModule
   ],
   providers: [ProjectListViewComponent],
   bootstrap: [AppComponent],
